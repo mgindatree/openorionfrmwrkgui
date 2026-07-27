@@ -1,0 +1,14 @@
+{
+    "C_Cpp.default.configurationProvider": "ms-vscode.makefile-tools",
+    
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/marcus/Documents/programs/program 2/idk/output",
+            "binaryPath": "/home/marcus/Documents/programs/program 2/idk/output/main",
+            "binaryArgs": []
+        },
+        {
+            "C_Cpp.default.compileCommands": "${workspaceFolder}/compile_commands.json"
+        }
+    ]
+}
