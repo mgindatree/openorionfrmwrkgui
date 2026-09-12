@@ -5,9 +5,9 @@ PKG_CONFIG_PATH := /usr/lib/x86_64-linux-gnu/pkgconfig
 export PKG_CONFIG_PATH
 
 CFLAGS := -Wall -Wextra -g \
-          $(shell pkg-config --cflags gtk4 libsodium libusb-1.0) 
+          $(shell pkg-config --cflags gtk4) 
 
-LIBS := $(shell pkg-config --libs gtk4 libsodium libusb-1.0)
+LIBS := $(shell pkg-config --libs gtk4)
 
 SRC_DIR := src
 OBJ_DIR := obj
