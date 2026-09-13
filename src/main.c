@@ -13,7 +13,7 @@ static void activate(GtkApplication *app, gpointer user_data)
 
     StackManager *stack = stack_manager_new();
 
-    GtkWidget *page = gtk_button_new_with_label("Hello World");
+    GtkWidget *page = gtk_button_new_with_label("check for updates");
 
     gtk_widget_set_halign(page, GTK_ALIGN_CENTER);
     gtk_widget_set_valign(page, GTK_ALIGN_CENTER);
