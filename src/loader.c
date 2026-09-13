@@ -334,19 +334,8 @@ static void load_mod(
         mod_showpage;
 
 
-    /*
-     * Let the mod create/register
-     * its pages.
-     *
-     * This does NOT show the page.
-     */
-
     init(&api);
 
-
-    /*
-     * Store the mod so it stays loaded.
-     */
 
     if (!store_mod(
             handle,
