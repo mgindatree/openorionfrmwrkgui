@@ -211,10 +211,16 @@ const char *stack_manager_get_current_name(
     if (current == NULL)
         return NULL;
 
-    return gtk_stack_get_child_name(
-        manager->stack,
-        current
-    );
+    GtkStackPage *page =
+        gtk_stack_get_page(
+            manager->stack,
+            current
+        );
+
+    if (page == NULL)
+        return NULL;
+
+    return gtk_stack_page_get_name(page);
 }
 
 
